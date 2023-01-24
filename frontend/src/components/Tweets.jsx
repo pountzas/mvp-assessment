@@ -28,10 +28,10 @@ function Tweets() {
   }, [tweetsStateGlobal]);
 
   return (
-    <ul>
+    <ul className="bg-gray-200 p-4 space-y-2">
       {tweets?.map((tweet) => (
-        <li key={tweet._id}>
-          <p>{tweet.text}</p>
+        <li className="bg-gray-100 p-4 rounded-lg" key={tweet._id}>
+          <p className="font-bold text-lg">{tweet.text}</p>
         </li>
       ))}
     </ul>

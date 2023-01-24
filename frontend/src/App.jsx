@@ -5,12 +5,12 @@ import SearchTweets from "./components/SearchTweets";
 
 const App = () => {
   return (
-    <div className="App">
-      <div className="left-side">
+    <div className="flex ">
+      <div className="left-side w-[50%] px-4 pt-4">
         <TweetCreator />
         <Tweets />
       </div>
-      <div className="right-side">
+      <div className="right-side w-[50%] px-4 pt-4">
         <SearchTweets />
       </div>
     </div>
